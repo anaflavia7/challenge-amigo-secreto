@@ -1,8 +1,5 @@
 
 //Capturar o valor do campo de entrada: Utilize document.getElementById ou document.querySelector para obter o texto inserido pelo usuário.
-
-//Atualizar o array de amigos: Se o valor for válido, adicione-o ao array que armazena os nomes dos amigos usando o método .push().
-//Limpar o campo de entrada: Após adicionar o nome, redefina o campo de texto para uma string vazia.
 let amigos = [];
 
 function adicionarAmigo() {
@@ -14,8 +11,8 @@ function adicionarAmigo() {
 
         return;
 }
-amigos.push(nomeAmigo);
-inputAmigo.value = '';
+amigos.push(nomeAmigo); //Atualizar o array de amigos: Se o valor for válido, adicione-o ao array que armazena os nomes dos amigos usando o método .push().
+inputAmigo.value = ''; //Limpar o campo de entrada: Após adicionar o nome, redefina o campo de texto para uma string vazia.
 inputAmigo.focus();
 atualizarLista();
 }
